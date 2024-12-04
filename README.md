@@ -10,8 +10,6 @@ Special thanks to the following projects and libraries:
 - [Animate on Scroll](https://github.com/michalsnik/aos) - Animation Library
 - [Hover.css](https://github.com/IanLunn/Hover) - Animation Library
 - [3kh0](https://github.com/3kh0) - Some Game Ports (amazing person btw)
-- [
+- [IamChristianS](https://www.github.com/IamChristianS) - Amazing Game Website Designer
 
 ---
-<!-- Disclaimer -->
-**Important Note**: This site should not be used in school or workplace environments where it is disallowed. By using this site, you agree that you are in a location that allows its usage, and any discretion is up to the user.
