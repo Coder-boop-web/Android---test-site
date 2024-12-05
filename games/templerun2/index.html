@@ -1,22 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Temple run 2</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Run 2</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
         }
-        iframe {
+        #loading {
+            font-size: 24px;
+            text-align: center;
+        }
+        #game {
+            display: none; /* Hide the game initially */
             width: 100%;
-            height: 700px; 
-            border: none; 
+            height: 700px;
+            border: none;
         }
     </style>
 </head>
 <body>
-    <p>28719840uf208ryf27yfn24yf88...complete. GH83 is Active. Game Loading Complete.</p>
-    
-    <iframe src="https://480132.github.io/v1/games/templerun2/index.html" title="Temple Run 2 Game"></iframe>
+    <div id="loading">28719840uf208ryf27yfn24yf88...complete. GH83 is Active. Game Loading Complete.</div>
+    <iframe id="game" src="https://480132.github.io/v1/games/templerun2/index.html" title="Temple Run 2 Game"></iframe>
+
+    <script>
+        // Function to simulate loading
+        function loadGame() {
+            // Hide the loading message
+            document.getElementById('loading').style.display = 'none';
+            // Show the game iframe
+            document.getElementById('game').style.display = 'block';
+        }
+
+        // Simulate a loading delay (e.g., 3 seconds)
+        setTimeout(loadGame, 3000);
+    </script>
 </body>
 </html>
