@@ -6,6 +6,31 @@
   </head>
   <body>
     <div style="margin:0 auto;text-align:center">
+      <div id="game">Loading game...</div>
+      <script>
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        document.getElementById("game").appendChild(player);
+        player.load("riddleschool5.swf").catch((error) => {
+          console.error("Error loading SWF:", error);
+          document.getElementById("game").innerText = "Failed to load the game.";
+        });
+      </script>
+    </div>
+  </body>
+</html>
+
+
+
+<!--
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Riddle School 5</title>
+    <script src="../../../ruffle/ruffle.js"></script>
+  </head>
+  <body>
+    <div style="margin:0 auto;text-align:center">
       <div id="game"></div>
       <script>
         const ruffle = window.RufflePlayer.newest();
