@@ -1,9 +1,30 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Riddle School 5</title>
+    <script src="../../../ruffle/ruffle.js"></script>
+  </head>
+  <body>
+    <div style="margin:0 auto;text-align:center">
+      <div id="game"></div>
+      <script>
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        document.getElementById("game").appendChild(player);
+        player.load("riddleschool5.swf");
+      </script>
+    </div>
+  </body>
+</html>
+
+
+<!--
+<!DOCTYPE html>
+<html>
     <head>
         <title>Riddle School 5</title>
         <script src="../../../ruffle/ruffle.js"></script>
-        <!--Google Analytics-->
+        <!--Google Analytic--
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9KJ1XPKLF"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -12,7 +33,7 @@
 
             gtag('config', 'G-M9KJ1XPKLF');
         </script>
-        <!--Google Analytics-->
+        <!--Google Analytics--
     </head>
     <body>
         <div style="margin:0 auto;text-align:center">
@@ -21,7 +42,7 @@
           </div>
         </div>
 
-        <!--Skin Ad-->
+        <!--Skin Ad--
 		<script>
 			var afg={};afg.u=6328;afg.s=21;
 			afg.centerWidth=1000; /* Adjust by Game Resolution */
